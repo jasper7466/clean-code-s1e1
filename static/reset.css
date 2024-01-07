@@ -1,0 +1,4 @@
+/* Resetting the default styles */
+input, button {
+  outline:none;
+}
