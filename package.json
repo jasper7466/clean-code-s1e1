@@ -4,7 +4,7 @@
   "description": "RS School educational project",
   "main": "app.js",
   "scripts": {
-    "serve": "alive-server --open='./static' --port=4000",
+    "serve": "alive-server --open='./public' --port=4000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
