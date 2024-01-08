@@ -1,0 +1,6 @@
+.task-list__input {
+  width: 56%;
+  width: 226px;
+  flex-grow: 1;
+  display: none;
+}

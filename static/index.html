@@ -16,53 +16,55 @@
   <body class="page">
     <header class="header">
       <img
-        class="header-image"
+        class="header__image"
         src="./eisenhower-matrix.jpg"
         alt="Eisenhower matrix image"
       >
       <a
-        class="more-link"
+        class="header__link"
         href="https://goal-life.com/page/method/matrix-eisenhower"
       >Want more details?</a>
     </header>
     <main class="main">
       <section id="tasks-section">
-        <h1 class="list-title" style="display: none;">Task list</h1>
-        <label class="new-task-label" for="new-task-input">Add Item</label>
-        <div class="add-wrapper">
-          <input id="new-task-input" class="text-input task-caption" type="text">
-          <button class="button-common button-add">Add</button>
+        <h1 class="title" style="display: none;">Task list</h1>
+        <div class="new-task">
+          <label class="new-task__label title" for="new-task-input">Add Item</label>
+          <div class="new-task__input-wrapper">
+            <input class="new-task__input text-input" id="new-task-input" type="text">
+            <button class="new-task__add-button button">Add</button>
+          </div>
         </div>
-        <h2 class="list-title">Todo</h2>
+        <h2 class="title">Todo</h2>
         <ul class="task-list" id="incomplete-tasks">
-          <li class="task-list-item">
-            <input class="task-checkbox" type="checkbox" aria-label="Complete">
-            <label class="task-caption task-label">Pay Bills</label>
-            <input type="text" class="text-input task-caption">
-            <button class="button-common button-edit">Edit</button>
-            <button class="button-common button-delete" aria-label="Remove">
-              <img class="button-delete-img" src="./remove.svg" alt="">
+          <li class="task-list__item">
+            <input class="task-list__checkbox" type="checkbox" aria-label="Complete">
+            <label class="task-list__label">Pay Bills</label>
+            <input type="text" class="task-list__input text-input">
+            <button class="task-list__edit-button button">Edit</button>
+            <button class="task-list__delete-button button" aria-label="Remove">
+              <img class="task-list__delete-image" src="./remove.svg" alt="">
             </button>
           </li>
-          <li class="task-list-item edit-mode">
-            <input class="task-checkbox" type="checkbox" aria-label="Complete">
-            <label class="task-caption task-label">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="text-input task-caption">
-            <button class="button-common button-edit">Save</button>
-            <button class="button-common button-delete" aria-label="Remove">
-              <img class="button-delete-img" src="./remove.svg" alt="">
+          <li class="task-list__item task-list__item_editing">
+            <input class="task-list__checkbox" type="checkbox" aria-label="Complete">
+            <label class="task-list__label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="task-list__input text-input">
+            <button class="task-list__edit-button button">Save</button>
+            <button class="task-list__delete-button button" aria-label="Remove">
+              <img class="task-list__delete-image" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>
-        <h2 class="list-title">Completed</h2>
+        <h2 class="title">Completed</h2>
         <ul class="task-list" id="completed-tasks">
-          <li class="task-list-item">
-            <input class="task-checkbox" type="checkbox" checked aria-label="Restore">
-            <label class="task-caption task-label">See the Doctor</label>
-            <input type="text" class="text-input task-caption">
-            <button class="button-common button-edit">Edit</button>
-            <button class="button-common button-delete" aria-label="Remove">
-              <img class="button-delete-img" src="./remove.svg" alt="">
+          <li class="task-list__item">
+            <input class="task-list__checkbox" type="checkbox" checked aria-label="Restore">
+            <label class="task-list__label">See the Doctor</label>
+            <input type="text" class="task-list__input text-input">
+            <button class="task-list__edit-button button">Edit</button>
+            <button class="task-list__delete-button button" aria-label="Remove">
+              <img class="task-list__delete-image" src="./remove.svg" alt="">
             </button>
           </li>
         </ul>

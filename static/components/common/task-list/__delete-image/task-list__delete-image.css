@@ -1,0 +1,9 @@
+.task-list__delete-image {
+  height: 2em;
+  transform: rotateZ(45deg);
+  transition: transform 200ms ease-in;
+}
+
+.task-list__delete-image:hover {
+  transform: rotateZ(0);
+}
