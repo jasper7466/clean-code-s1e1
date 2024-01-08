@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "serve": "alive-server --open='./public' --port=4000",
+    "deploy": "gh-pages -d public --nojekyll",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +19,7 @@
   },
   "homepage": "https://github.com/jasper7466/clean-code-s1e1#readme",
   "devDependencies": {
-    "alive-server": "^1.3.0"
+    "alive-server": "^1.3.0",
+    "gh-pages": "^6.1.1"
   }
 }
